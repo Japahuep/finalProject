@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
-    <!-- /Google Fonts -->
-    <title>Los Pollos de Domeyko</title>
-    <link rel="shortcut icon" href="./media/images/circle-icon-32x32.ico">
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+  <!-- /Google Fonts -->
+  <title>Los Pollos de Domeyko</title>
+  <link rel="shortcut icon" href="./media/images/circle-icon-32x32.ico">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <div>
     <header>
-        <!--Icono de Los Pollos de Domeyko-->
-        <section>
-            <a href="./index.html"><img src="./media/images/circle-icon.png" id="up" width="150px" alt="Icono Pollos"></a>
-        </section>        
-        <!--Título y pequeña descripción-->
-        <section class="tituloPollos">
-            <h1>Los Pollos de Domeyko 🍗</h1>
-            <h3>Pollos Asados a las Brasas, Chorrillanas, Sándwiches y más.</h3> 
-        </section>
-        <section>
-           <!--Buscador general ESQUEMÁTICO-->
-            <form action="#" class="inlineHeader">
-                <label for="search"></label>
-                <input type="text" name="search">
-                <input type="submit" value="Buscar">
-            </form>
-           <!--Aplicaciones-->
-            <ul class="inlineHeader">
-                <li>Inicia sesión</li>
-                <li>Tu carrito</li>
-            </ul>
-        </section>
-            <!--Menú de navegación-->
-        <nav class="navHeader">
-            <ul>
-                <li><a href="./pages/menu.html">MENÚ</a></li>
-                <li><a href="./pages/promociones.html">PROMOCIONES</a></li>
-                <li><a href="./pages/locales.html">LOCALES</a></li>
-                <li><a href="./pages/somos.html">QUIENES SOMOS</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div>
+          <a href="./index.html"><img src="./media/images/circle-icon.png" alt="Logo Pollos" class="logo"></a>
+        </div>
+        <div>
+          <ul class="headerMenu">
+            <li>
+              <a href="./pages/menu.html">MENÚ</a>
+            </li>
+            <li>
+              <a href="./pages/promociones.html">PROMOCIONES</a>
+            </li>
+            <li>
+              <a href="./pages/locales.html">LOCALES</a>
+            </li>
+            <li>
+              <a href="./pages/somos.html">QUIENES SOMOS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <!--Buscador general ESQUEMÁTICO-->
+          <form action="#" class="inlineHeader">
+            <label for="search"></label>
+            <input type="text" name="search">
+            <input type="submit" value="Buscar">
+          </form>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <img src="./media/images/userIcon.png" alt="Icono Usuario" class="icons">
+            </li>
+            <li>
+              <img src="./media/images/shoppingCart.svg" alt="Icono Carro" class="icons">
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <main>
-        <section>
-            <!--Cover Flow de algunos productos en venta-->
-            <div>
-                <h2>¡Disfruta de nuestros exquisitos productos!</h2>
-            </div>
-            <div class="coverFlow">
-                <img src="./media/images/cover-flow01.png" width="300px" alt="Pollo asado">
-                <img src="./media/images/cover-flow02.png" width="300px" alt="Papas fritas">
-                <img src="./media/images/cover-flow03.png" width="300px" alt="Churrasco">
-            </div>
+    <main id="indexGrid">
+        <section class="backgroundOrange"  id="bannerSection">
+          <div class="banner">
+            <h1>Los Pollos de Domeyko 🍗</h1>
+            <h2>Pollos Asados a las Brasas, Chorrillanas, Sándwiches y más.</h2>
+          </div>
         </section>
-        <section class="flexRow">
-            <!--Imagenes con enlaces-->
-            <!--Los enlaces corresponden a los del Menú de navegación #2-->
-            <div class="imagenesLink">
-                <h2>Conoce nuestras promociones</h2>
-                <p>Lorem, ipsum dolor.</p>
-                <a href="./pages/promociones.html"><img src="./media/images/descuento-link.png" width="250px" alt="Descuentos"></a>
+        <section class="backgroundOrange" id="productsSection">
+          <div>
+            <div class="title">
+              <h3>¡Disfruta de nuestros exquisitos productos!</h3>
             </div>
-            <div class="imagenesLink">
+            <div class="imgProducts">
+              <div>
+                <img src="./media/images/cover-flow01.png" width="300px" alt="Pollo asado">
+              </div>
+              <div>
+                <img src="./media/images/cover-flow02.png" width="300px" alt="Papas fritas">
+              </div>
+              <div>
+                <img src="./media/images/cover-flow03.png" width="300px" alt="Churrasco">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="actionSection">
+          <div class="actions">
+            <div>
+              <div class="title">
+                <h2>Conoce nuestras promociones</h2>
+              </div>
+              <div>
+                <a href="./pages/menu.html"><img src="./media/images/circle-icon.png"  width="250px" alt="Logo de Los Pollos de Domeyko"></a>
+              </div>
+            </div>
+            <div>
+              <div class="title">
                 <h2>¡Haz tu pedido aquí!</h2>
                 <p>Dale clic al pollo 😉</p>
-                <a href="./pages/menu.html"><img src="./media/images/circle-icon.png" width="250" alt="Logo de Los Pollos de Domeyko"></a>
-            </div>
-            <div class="imagenesLink">
-                <h2>Tu opinión nos importa</h2>
-                <p>Lorem, ipsum dolor.</p>
+              </div>
+              <div>
                 <!--PENDIENTE LA IMAGEN-->
-                <a href="./pages/contacto.html"><img src="./media/images/circle-icon.png" width="250" alt="Logo de Los Pollos de Domeyko"></a>
+                <a href="./pages/contacto.html"><img src="./media/images/circle-icon.png" width="250px" alt="Logo de Los Pollos de Domeyko"></a>
+              </div>
             </div>
-            <div class="imagenesLink">
-                <h2>Trabaja con nosotros</h2>
-                <p>Lorem, ipsum dolor.</p>
-                <!--PENDIENTE LA IMAGEN-->
-                <a href="#"><img src="./media/images/circle-icon.png" width="250" alt="Logo de Los Pollos de Domeyko"></a>
-            </div>
+          </div>
         </section>
-        <section>
-            <iframe src="https://open.spotify.com/embed/track/4btdSqYWm5ThhAyUlHzwZt?utm_source=generator" width="30%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <section id="reachOutSection">
+          <div class="reachOut">
+            <div>
+              <div>
+                <!--PENDIENTE LA IMAGEN-->
+                <a href="./pages/contacto.html"><img src="./media/images/circle-icon.png" width="100" alt="Logo de Los Pollos de Domeyko"></a>
+              </div>
+              <div class="title">
+                <h2>Tu opinión nos importa</h2>
+              </div>
+            </div>
+            <div>
+              <div>
+                <!--PENDIENTE LA IMAGEN-->
+                <a href="./pages/contacto.html"><img src="./media/images/circle-icon.png" width="100" alt="Logo de Los Pollos de Domeyko"></a>
+              </div>
+              <div class="title">
+                <h2>Trabaja con nosotros</h2>
+              </div>
+            </div>
+          </div>
         </section>
     </main>
     <footer>
-        <!--Pequeña reseña de los pollos-->
-        <section class="footer1">
-            <h4>Nuestra historia</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui aspernatur placeat laborum nulla est iusto. Voluptatibus, aperiam? Sint eligendi voluptatibus architecto fugit molestias fuga dignissimos tenetur maiores aliquid, quos consequatur quod accusantium minus, reprehenderit eaque voluptatem ducimus voluptas minima. Mollitia blanditiis obcaecati voluptates illum hic id consectetur voluptatum dolore.</p>
-        </section>
-        <section class="footer2">
-            <!--Menú de navegación Footer-->
-            <img src="./media/images/circle-icon.png" width="80px" alt="Icono Pollos">
-            <ul class="inline">
-                <li><a href="./pages/locales.html">Visitanos!</a></li>
-                <li><a href="./pages/contacto.html">Contáctanos</a></li>
-                <li><a href="https://www.instagram.com/pollosdedomeyko/" target="_blank">RRSS</a></li>
-            </ul>
-        </section>
-        <div class="subir">
-            <a href="#up">Subir</a>
+      <div class="footerContent backgroundOrange">
+        <div>
+          <h4>Nuestra historia</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui aspernatur placeat laborum nulla est iusto. Voluptatibus, aperiam? Sint eligendi voluptatibus architecto fugit molestias fuga dignissimos tenetur maiores aliquid, quos consequatur quod accusantium minus, reprehenderit eaque voluptatem ducimus voluptas minima. Mollitia blanditiis obcaecati voluptates illum hic id consectetur voluptatum dolore.</p>
         </div>
+        <div class="footerReachOut">
+          <div>
+            <img src="./media/images/circle-icon.png" alt="Icono Pollos" class="logo">
+          </div>
+          <div>
+            <ul>
+              <li><a href="./pages/locales.html">Visitanos!</a></li>
+              <li><a href="./pages/contacto.html">Contáctanos</a></li>
+              <li><a href="https://www.instagram.com/pollosdedomeyko/" target="_blank">RRSS</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="up">
+          <a href="#bannerSection">↑</a>
+        </div>
+      </div>
     </footer>
+</div>
 </body>
 </html>

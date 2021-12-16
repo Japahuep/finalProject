@@ -1,114 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
-        <!-- /Google Fonts -->
-        <title>Los Pollos de Domeyko</title>
-        <link rel="shortcut icon" href="../media/images/circle-icon-32x32.ico">
-        <link rel="stylesheet" href="../css/styles.css">
-    </head>
-    <body>
-        <header>
-            <!--Icono de Los Pollos de Domeyko-->
-            <section>
-                <a href="../index.html"><img src="../media/images/circle-icon.png" id="up" width="150px" alt="Icono Pollos"></a>
-            </section>        
-            <!--Título y pequeña descripción-->
-            <section class="tituloPollos">
-                <h1>Los Pollos de Domeyko 🍗</h1>
-                <h3>Pollos Asados a las Brasas, Chorrillanas, Sándwiches y más.</h3> 
-            </section>
-            <section>
-               <!--Buscador general ESQUEMÁTICO-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- /Google Fonts -->
+    <title>Los Pollos de Domeyko</title>
+    <link rel="shortcut icon" href="../media/images/circle-icon-32x32.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="../index.html"><img src="../media/images/circle-icon.png" alt="Logo Pollos" class="logo"></a>
+            </div>
+            <div>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="../pages/menu.html">MENÚ</a>
+                    </li>
+                    <li>
+                        <a href="../pages/promociones.html">PROMOCIONES</a>
+                    </li>
+                    <li>
+                        <a href="../pages/locales.html">LOCALES</a>
+                    </li>
+                    <li>
+                        <a href="../pages/somos.html">QUIENES SOMOS</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!--Buscador general ESQUEMÁTICO-->
                 <form action="#" class="inlineHeader">
                     <label for="search"></label>
                     <input type="text" name="search">
                     <input type="submit" value="Buscar">
                 </form>
-               <!--Aplicaciones-->
-                <ul class="inlineHeader">
-                    <li>Inicia sesión</li>
-                    <li>Tu carrito</li>
-                </ul>
-            </section>
-        </header>
-        <!--Menú de navegación-->
-        <nav class="navHeader">
-            <ul>
-                <li><a href="../pages/menu.html">MENÚ</a></li>
-                <li><a href="../pages/promociones.html">PROMOCIONES</a></li>
-                <li><a href="../pages/locales.html">LOCALES</a></li>
-                <li><a href="../pages/somos.html">QUIENES SOMOS</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section class="sectionPromo">
-                <div class="cajaPromo">
-                    <h3>Promo1</h3>
-                    <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
-                </div>
-                <div class="cajaPromo">
-                    <h3>Promo2</h3>
-                    <img src="../media/images/circle-icon.png" alt="Promo2" width="50px">
-                </div>
-                <div class="cajaPromo">
-                    <h3>Promo3</h3>
-                    <img src="../media/images/circle-icon.png" alt="Promo3" width="50px">
-                </div>
-                <div class="cajaPromo">
-                    <h3>Promo4</h3>
-                    <img src="../media/images/circle-icon.png" alt="Promo4" width="50px">
-                </div>
-            </section>
-            <section>
-                <div class="centrar">
-                    <div class="cajaMenu">
-                        <h3>Promo1</h3>
-                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
-                        <p>AGREGAR $$$</p>
-                    </div>
-                    <div class="cajaMenu">
-                        <h3>Promo2</h3>
-                        <img src="../media/images/circle-icon.png" alt="Promo2" width="150px">
-                        <p>AGREGAR $$$</p>
-                    </div>
-                    <div class="cajaMenu">
-                        <h3>Promo3</h3>
-                        <img src="../media/images/circle-icon.png" alt="Promo3" width="150px">
-                        <p>AGREGAR $$$</p>
-                    </div>
-                    <div class="cajaMenu">
-                        <h3>Promo4</h3>
-                        <img src="../media/images/circle-icon.png" alt="Promo4" width="150px">
-                        <p>AGREGAR $$$</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <!--Pequeña reseña de los pollos-->
-            <section class="footer1">
-                <h4>Nuestra historia</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui aspernatur placeat laborum nulla est iusto. Voluptatibus, aperiam? Sint eligendi voluptatibus architecto fugit molestias fuga dignissimos tenetur maiores aliquid, quos consequatur quod accusantium minus, reprehenderit eaque voluptatem ducimus voluptas minima. Mollitia blanditiis obcaecati voluptates illum hic id consectetur voluptatum dolore.</p>
-            </section>
-            <section class="footer2">
-                <!--Menú de navegación Footer-->
-                <img src="../media/images/circle-icon.png" width="80px" alt="Icono Pollos">
-                <ul class="inline">
-                    <li><a href="../pages/locales.html">Visitanos!</a></li>
-                    <li><a href="../pages/contacto.html">Contáctanos</a></li>
-                    <li><a href="https://www.instagram.com/pollosdedomeyko/" target="_blank">RRSS</a></li>
-                </ul>
-            </section>
-            <div class="subir">
-                <a href="#up">Subir</a>
             </div>
-        </footer>
-    </body>
-    </html>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../media/images/userIcon.png" alt="Icono Usuario" class="icons">
+                    </li>
+                    <li>
+                        <img src="../media/images/shoppingCart.svg" alt="Icono Carro" class="icons">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="promoGrid">
+        <div class="pageTitle" id="promoTitleSection">
+            <h1>Promociones! ✨</h1>
+        </div>
+        <section id="promoResumeSection">
+            <div class="promoResume">
+                <div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
+                    </div>
+                    <div>
+                        <h3>PromosPollos</h3>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
+                    </div>
+                    <div>
+                        <h3>PromosCompletos</h3>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
+                    </div>
+                    <div>
+                        <h3>PromosFritangas</h3>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
+                    </div>
+                    <div>
+                        <h3>PromosHamburguesas</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promoMainSection">
+            <div class="promoMain">
+                <div>
+                    <div>
+                        <h3>Promo1</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Promo2</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Promo3</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Promo4</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Promo5</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Promo6</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Promo7</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Promo8</h3>
+                    </div>
+                    <div>
+                        <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
+                    </div>
+                    <div>
+                        <p>AGREGAR $$$</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerContent backgroundOrange">
+            <div>
+                <h4>Nuestra historia</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui aspernatur placeat laborum nulla
+                est iusto. Voluptatibus, aperiam? Sint eligendi voluptatibus architecto fugit molestias fuga dignissimos tenetur maiores aliquid, quos consequatur quod accusantium minus, reprehenderit eaque
+                voluptatem ducimus voluptas minima. Mollitia blanditiis obcaecati voluptates illum hic id
+                consectetur voluptatum dolore.</p>
+            </div>
+            <div class="footerReachOut">
+                <div>
+                    <img src="../media/images/circle-icon.png" alt="Icono Pollos" class="logo">
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="../pages/locales.html">Visitanos!</a></li>
+                        <li><a href="../pages/contacto.html">Contáctanos</a></li>
+                        <li><a href="https://www.instagram.com/pollosdedomeyko/" target="_blank">RRSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="up">
+                <a href="#promoTitle">↑</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
