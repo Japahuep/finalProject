@@ -13,6 +13,7 @@ header {
     top: 0;
     background-color: white;
     border-bottom: solid #ffaa09 3px;
+    z-index: 1;
 }
 header li {
     display: inline-block;
@@ -57,6 +58,12 @@ footer ul {
     justify-content: space-around;
     text-align: center;
 }
+.actions img {
+    width: 40%;
+}
+.actions img:hover, .reachOut img:hover {
+    transform: scale(1.2,1.2);
+}
 .promoResume div, .promoMain div {
     margin: 10px 10px;
 }
@@ -71,12 +78,16 @@ footer ul {
     display: flex;
     flex-direction: column;
     font-size: 10px;
+    text-align: center;
 }
 .reachOut div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.reachOut img {
+    width: 25%;
 }
 .imgProducts {
     max-width: 1024px;
@@ -138,6 +149,21 @@ footer ul {
 .productBoxSection div {
     width: 150px;
     margin: 10px 10px;
+}
+.productBox {
+
+}
+.productBox button, .promoMainBox button {
+    background-color: #ffaa09;
+    color: white;
+    height: 35px;
+    width: 80%;
+    text-align: center;
+    border: solid #ffaa09;
+    border-radius: 10px;
+}
+.promoMainBox {
+
 }
 .up {
     background-color: white;
