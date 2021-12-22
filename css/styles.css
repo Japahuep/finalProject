@@ -47,9 +47,6 @@ p {
 footer ul {
     margin-left: 15px;    
 }
-/* #actionSection img {
-    width: 60%;
-} */
 .icons {
     width: 40px;
 }
@@ -110,13 +107,27 @@ footer ul {
     width: 64px;
     height: 64px;
 }
-.headerMenu a{
+/* .headerMenu a{
     color: #ffaa09;
     font-weight: bold;
     font-size: 21px;
+} */
+/* Modify the background color */
+    
+.navbar-light .navbar-nav .nav-link, .container-fluid{
+    background-color: white;
+    color: #ffaa09;
+    font-size: 21px;
+    font-weight: bold;
+}
+.accordion-button {
+    color: #7b5110;
 }
 .backgroundOrange {
     background-color: #ffaa09;
+}
+.btn {
+    line-height: 0.5;
 }
 .title {
     margin-bottom: 20px;
@@ -186,6 +197,13 @@ footer ul {
 .promoMain p{
     text-align: center;
 }
+.carousel-inner{
+    width:100%;
+    max-height: 370px !important;
+}
+.carousel-inner img {
+    margin: auto;
+  }
 #productsSection {
     padding: 45px 30px;
     margin-bottom: 15px;
@@ -195,10 +213,10 @@ footer ul {
     text-align: center;
     font-size: 25px;
 }
-#productsSection img {
+/* #productsSection img {
     border-radius: 10px;
     border: solid #7b5110 3px;
-}
+} */
 #bannerSection {
     grid-area: banner;
 }
@@ -211,7 +229,7 @@ footer ul {
 #indexGrid {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr 1.5fr;
+    grid-template-rows: 20% 40% 20%;
     grid-template-areas:
         "banner banner"
         "products products"
@@ -241,7 +259,7 @@ footer ul {
 #promoGrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 3fr;
+    grid-template-rows: 40% 10% 50%;
     grid-template-areas: 
         "promoTitle"
         "promoResume"

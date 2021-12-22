@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- /Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Los Pollos de Domeyko</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="shortcut icon" href="../media/images/circle-icon-32x32.ico">
@@ -16,45 +17,80 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <a href="../index.html"><img src="../media/images/circle-icon.png" alt="Logo Pollos" class="logo"></a>
-            </div>
-            <div>
-                <ul class="headerMenu">
-                    <li>
-                        <a href="../pages/menu.html">MENÚ</a>
-                    </li>
-                    <li>
-                        <a href="../pages/promociones.html">PROMOCIONES</a>
-                    </li>
-                    <li>
-                        <a href="../pages/locales.html">LOCALES</a>
-                    </li>
-                    <li>
-                        <a href="../pages/somos.html">QUIENES SOMOS</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <!--Buscador general ESQUEMÁTICO-->
-                <form action="#" class="inlineHeader">
-                    <label for="search"></label>
-                    <input type="text" name="search">
-                    <input type="submit" value="Buscar">
-                </form>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <img src="../media/images/userIcon.png" alt="Icono Usuario" class="icons">
-                    </li>
-                    <li>
-                        <img src="../media/images/shoppingCart.svg" alt="Icono Carro" class="icons">
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <!-- <nav>
+        <div>
+          <a href="../index.html"><img src="../media/images/circle-icon.png" alt="Logo Pollos" class="logo"></a>
+        </div>
+        <div>
+          <ul class="headerMenu">
+            <li>
+              <a href="../pages/menu.html">MENÚ</a>
+            </li>
+            <li>
+              <a href="../pages/promociones.html">PROMOCIONES</a>
+            </li>
+            <li>
+              <a href="../pages/locales.html">LOCALES</a>
+            </li>
+            <li>
+              <a href="../pages/somos.html">QUIENES SOMOS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form action="#" class="inlineHeader">
+            <label for="search"></label>
+            <input type="text" name="search">
+            <input type="submit" value="Buscar">
+          </form>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <img src="../media/images/userIcon.png" alt="Icono Usuario" class="icons">
+            </li>
+            <li>
+              <img src="../media/images/shoppingCart.svg" alt="Icono Carro" class="icons">
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../media/images/circle-icon.png" alt="Logo Pollos" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/promociones.html">PROMOCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/locales.html">LOCALES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/somos.html">QUIENES SOMOS</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <ul class="d-flex">
+            <li class="nav-item">
+              <img src="../media/images/userIcon.png" alt="Icono Usuario" class="icons">
+            </li>
+            <li class="nav-item">
+              <img src="../media/images/shoppingCart.svg" alt="Icono Carro" class="icons">
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main id="promoGrid">
         <div class="pageTitle" id="promoTitleSection">
@@ -67,7 +103,7 @@
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
                     </div>
                     <div>
-                        <h3>PromosPollos</h3>
+                        <h4>PromosPollos</h4>
                     </div>
                 </div>
                 <div>
@@ -75,7 +111,7 @@
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
                     </div>
                     <div>
-                        <h3>PromosCompletos</h3>
+                        <h4>PromosCompletos</h4>
                     </div>
                 </div>
                 <div>
@@ -83,7 +119,7 @@
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
                     </div>
                     <div>
-                        <h3>PromosFritangas</h3>
+                        <h4>PromosFritangas</h4>
                     </div>
                 </div>
                 <div>
@@ -91,7 +127,7 @@
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="50px">
                     </div>
                     <div>
-                        <h3>PromosHamburguesas</h3>
+                        <h4>PromosHamburguesas</h4>
                     </div>
                 </div>
             </div>
@@ -100,130 +136,130 @@
             <div class="promoMain">
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo1</h3>
+                        <h4>Promo1</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo2</h3>
+                        <h4>Promo2</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo3</h3>
+                        <h4>Promo3</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo4</h3>
+                        <h4>Promo4</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo5</h3>
+                        <h4>Promo5</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo6</h3>
+                        <h4>Promo6</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo7</h3>
+                        <h4>Promo7</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo8</h3>
+                        <h4>Promo8</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo9</h3>
+                        <h4>Promo9</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
                 </div>
                 <div class="promoMainBox">
                     <div>
-                        <h3>Promo10</h3>
+                        <h4>Promo10</h4>
                     </div>
                     <div>
                         <img src="../media/images/circle-icon.png" alt="Promo1" width="150px">
                     </div>
                     <div>
-                        <button>
+                        <button type="button" class="btn btn-warning">
                             AGREGAR
                         </button>
                     </div>
@@ -257,5 +293,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

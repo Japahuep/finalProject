@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
   <!-- /Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Los Pollos de Domeyko</title>
   <link rel="shortcut icon" href="./media/images/circle-icon-32x32.ico">
   <link rel="stylesheet" href="./css/styles.css">
@@ -16,7 +17,7 @@
 <body>
   <div>
     <header>
-      <nav>
+      <!-- <nav>
         <div>
           <a href="./index.html"><img src="./media/images/circle-icon.png" alt="Logo Pollos" class="logo"></a>
         </div>
@@ -37,7 +38,6 @@
           </ul>
         </div>
         <div>
-          <!--Buscador general ESQUEMÁTICO-->
           <form action="#" class="inlineHeader">
             <label for="search"></label>
             <input type="text" name="search">
@@ -54,6 +54,42 @@
             </li>
           </ul>
         </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./media/images/circle-icon.png" alt="Logo Pollos" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/promociones.html">PROMOCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/locales.html">LOCALES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/somos.html">QUIENES SOMOS</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <ul class="d-flex">
+            <li class="nav-item">
+              <img src="./media/images/userIcon.png" alt="Icono Usuario" class="icons">
+            </li>
+            <li class="nav-item">
+              <img src="./media/images/shoppingCart.svg" alt="Icono Carro" class="icons">
+            </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main id="indexGrid">
@@ -66,9 +102,22 @@
         <section class="backgroundOrange" id="productsSection">
           <div>
             <div class="title">
-              <h3>¡Disfruta de nuestros exquisitos productos!</h3>
+              <h2>¡Disfruta de nuestros exquisitos productos!</h2>
             </div>
-            <div class="imgProducts">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./media/images/cover-flow01-carousel.png" class="d-block w-75 rounded" alt="Pollo asado">
+                </div>
+                <div class="carousel-item">
+                  <img src="./media/images/cover-flow02-carousel.png" class="d-block w-75 rounded" alt="Papas fritas">
+                </div>
+                <div class="carousel-item">
+                  <img src="./media/images/cover-flow03-carousel.png" class="d-block w-75 rounded" alt="Churrasco">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="imgProducts">
               <div>
                 <img src="./media/images/cover-flow01.png" width="300px" alt="Pollo asado">
               </div>
@@ -78,7 +127,7 @@
               <div>
                 <img src="./media/images/cover-flow03.png" width="300px" alt="Churrasco">
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <section id="actionSection">
@@ -111,7 +160,7 @@
                 <a href="./pages/contacto.html"><img src="./media/images/circle-icon.png" alt="Logo de Los Pollos de Domeyko"></a>
               </div>
               <div class="title">
-                <h2>Tu opinión nos importa</h2>
+                <h5>Tu opinión nos importa</h5>
               </div>
             </div>
             <div>
@@ -120,7 +169,7 @@
                 <a href="./pages/contacto.html"><img src="./media/images/circle-icon.png" alt="Logo de Los Pollos de Domeyko"></a>
               </div>
               <div class="title">
-                <h2>Trabaja con nosotros</h2>
+                <h5>Trabaja con nosotros</h5>
               </div>
             </div>
           </div>
@@ -150,5 +199,8 @@
       </div>
     </footer>
 </div>
+ <!-- Bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
