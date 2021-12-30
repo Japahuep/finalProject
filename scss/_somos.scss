@@ -1,0 +1,17 @@
+.knowUsContent {
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 115px;
+}
+#knowUsTextSection {
+  grid-area: knowUsText;
+}
+#knowUsImageSection {
+  grid-area: knowUsImage;
+}
+#knowUsGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+      "knowUsText knowUsImage";
+}

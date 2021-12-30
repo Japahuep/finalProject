@@ -1,0 +1,25 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  border-bottom: solid #ffaa09 3px;
+  z-index: 5;
+  li {
+    display: inline-block;
+    padding: 0 10px; 
+  }
+}
+.navbar-light .navbar-nav .nav-link, header .container-fluid{
+    background-color: white;
+    color: #ffaa09;
+    font-size: 21px;
+    font-weight: bold;
+}
+.icons {
+  width: 40px;
+}
+.logo {
+  width: 64px;
+  height: 64px;
+}

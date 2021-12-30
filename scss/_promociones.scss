@@ -1,0 +1,29 @@
+.promoResume {
+  overflow: auto;
+  div {
+    margin: 10px 10px; 
+  }
+}
+.promoMain {
+  flex-wrap: wrap;
+  min-width: 250px;
+  margin-bottom: 135px;
+  div {
+    margin: 10px 10px;
+  }
+  p{
+    text-align: center;
+  }
+}
+.promoMainBox {
+  min-width: 180px;
+  button {
+    background-color: #ffaa09;
+    color: white;
+    height: 35px;
+    width: 80%;
+    text-align: center;
+    border: solid #ffaa09;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,57 @@
+@media screen and (max-width: 768px) {
+  .imgProducts, .actions {
+      flex-direction: column;
+  }
+  .reachOut {
+      flex-direction: row;
+      font-size: 10px;
+      justify-content: space-around;
+  }
+  .footerContent {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+      grid-template-areas: 
+      "footerHistory"
+      "footerReachOut";
+  }
+  .footerContent ul {
+      display: flex;
+  }
+  .footerContent li {
+      padding: 10px;
+  }
+  #indexGrid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 20% 40% 20%;
+  grid-template-areas:
+      "banner"
+      "products"
+      "action"
+      "reachOut";}
+  .productBoxSection {
+      flex-wrap: wrap;
+  }
+  .productBoxSection div {
+      min-width: 250px;
+  }
+  .promoResume {
+      justify-content: flex-start;
+  }
+  .inlineHeader {
+      display: none;
+  }
+  #knowUsGrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+          "knowUsText"
+          "knowUsImage";
+  }
+  .knowUsContent {
+      margin-bottom: 25px;
+  }
+  main {
+      padding-bottom: 259.633px;
+  }
+}
