@@ -25,7 +25,7 @@
       "products products"
       "action reachOut";
 }
-.imgProducts, .actions, .productBoxSection, .promoResume, .promoMain {
+.imgProducts, .productBoxSection, .promoResume, .promoMain {
   display: flex;
   justify-content: space-around;
   text-align: center; 
@@ -43,13 +43,18 @@
     margin: auto;
   }
 }
-.actions {
-  img {
-    width: 40%;
+@mixin images($width){
+  width: $width;
     transition: all ease 0.5s;
     &:hover {
       transform: scale(1.2,1.2);
     }
+}
+
+.actions {
+  @extend .imgProducts;
+  img{
+  @include images(40%);
   }
   div{
     margin-bottom: 10px;
@@ -67,9 +72,6 @@
     justify-content: center;
   }
   img {
-    width: 25%;
-    &:hover {
-      transform: scale(1.2,1.2);
-    }
+    @include images(25%);
   }
 }

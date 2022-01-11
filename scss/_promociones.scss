@@ -18,12 +18,12 @@
 .promoMainBox {
   min-width: 180px;
   button {
-    background-color: #ffaa09;
+    background-color: map-get($colors, cOrange);
     color: white;
     height: 35px;
     width: 80%;
     text-align: center;
-    border: solid #ffaa09;
+    border: solid map-get($colors, cOrange);
     border-radius: 10px;
   }
 }

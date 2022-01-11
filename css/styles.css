@@ -34,10 +34,6 @@ p {
 section {
   padding: 20px 30px; }
 
-@media screen and (max-width: 768px) {
-  main {
-    padding-bottom: 259.633px; } }
-
 .title {
   margin-bottom: 20px;
   min-height: 50px;
@@ -48,11 +44,10 @@ section {
 .btn-outline-success {
   color: gray;
   border-color: gray; }
-
-.btn-outline-success:hover {
-  color: white;
-  border-color: gray;
-  background-color: #ffaa09; }
+  .btn-outline-success:hover {
+    color: white;
+    border-color: gray;
+    background-color: #ffaa09; }
 
 .btn {
   line-height: 0.5; }
@@ -184,7 +179,8 @@ footer {
     align-items: center;
     justify-content: center; }
   .reachOut img {
-    width: 25%; }
+    width: 25%;
+    transition: all ease 0.5s; }
     .reachOut img:hover {
       transform: scale(1.2, 1.2); }
 
@@ -246,3 +242,49 @@ footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "knowUsText knowUsImage"; }
+
+@media screen and (max-width: 768px) {
+  .imgProducts, .actions, .actions {
+    flex-direction: column; }
+  .reachOut {
+    flex-direction: row;
+    font-size: 10px;
+    justify-content: space-around; }
+  .footerContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "footerHistory" "footerReachOut"; }
+    .footerContent li {
+      padding: 10px; }
+    .footerContent ul {
+      display: flex; }
+  #indexGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20% 40% 20%;
+    grid-template-areas: "banner" "products" "action" "reachOut"; }
+  .productBoxSection {
+    flex-wrap: wrap; }
+  .productBoxSection div {
+    min-width: 250px; }
+  .promoResume {
+    justify-content: flex-start; }
+  .inlineHeader {
+    display: none; }
+  #knowUsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "knowUsText" "knowUsImage"; }
+  .knowUsContent {
+    margin-bottom: 25px; }
+  main {
+    padding-bottom: 226.733px; } }
+
+@media screen and (max-width: 576px) {
+  .footerContent li {
+    padding: 3px; }
+  .footerContent ul {
+    display: flex;
+    flex-direction: column; }
+  main {
+    padding-bottom: 315.833px; } }

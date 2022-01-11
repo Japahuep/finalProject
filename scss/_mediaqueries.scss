@@ -9,16 +9,16 @@
   }
   .footerContent {
       grid-template-columns: 1fr;
-      grid-template-rows: 2fr 1fr;
+      grid-template-rows: 50% 50%;
       grid-template-areas: 
       "footerHistory"
       "footerReachOut";
-  }
-  .footerContent ul {
-      display: flex;
-  }
-  .footerContent li {
-      padding: 10px;
+      li {
+          padding: 10px;
+      }
+      ul {
+          display: flex;
+      }
   }
   #indexGrid {
   grid-template-columns: 1fr;
@@ -52,6 +52,21 @@
       margin-bottom: 25px;
   }
   main {
-      padding-bottom: 259.633px;
+      padding-bottom: 226.733px;
   }
+}
+
+@media screen and (max-width: 576px) {
+    .footerContent {
+        li {
+            padding: 3px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    main {
+        padding-bottom: 315.833px;
+    }
 }

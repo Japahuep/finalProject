@@ -3,7 +3,7 @@ header {
   width: 100%;
   top: 0;
   background-color: white;
-  border-bottom: solid #ffaa09 3px;
+  border-bottom: solid map-get($colors , cOrange) 3px;
   z-index: 5;
   li {
     display: inline-block;
@@ -12,7 +12,7 @@ header {
 }
 .navbar-light .navbar-nav .nav-link, header .container-fluid{
     background-color: white;
-    color: #ffaa09;
+    color: map-get($colors , cOrange);
     font-size: 21px;
     font-weight: bold;
 }

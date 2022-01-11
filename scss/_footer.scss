@@ -29,11 +29,11 @@ footer {
   text-align: center;
   position: absolute;
   right: 5%;
-  border: solid #ffaa09;
+  border: solid map-get($colors , cOrange);
   border-radius: 50%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  color: #ffaa09;
+  color: map-get($colors, cOrange );
   font-size: 25px;
 }

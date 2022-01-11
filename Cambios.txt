@@ -1,0 +1,5 @@
+• Keywords: Pollos, Comida, Pollos Asados, Fritura, Papas Fritas, Almuerzo, Cena, Hambre
+• Títulos: Se agregó el nombre del .html + | + Los Pollos de Domeyko. Ejemplo: Menú | Los Pollos de Domeyko
+• El @mixin se encuentra en _index.scss
+• El @extend se encuentra en _index.scss
+• El maps contiene los colores personalizados de la página.
