@@ -2,7 +2,7 @@
   grid-area: banner;
 }
 #productsSection {
-  padding: 45px 30px;
+  padding: 20px 30px 45px 30px;
   margin-bottom: 15px;
   grid-area: products;
   h3 {
@@ -32,6 +32,10 @@
 }
 .banner {
   margin-top: 110px;
+  h1 {
+    font-family: 'Gretoon';
+    color: map-get($colors , cBrown);
+  }
   h2 {
     font-size: 25px;
   }

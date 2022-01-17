@@ -2,7 +2,7 @@
   margin-top: 50px ;
   margin-bottom: 55px;
   div {
-    width: 150px;
+    width: 200px;
     margin: 10px 10px;
   }
   button {
@@ -14,5 +14,11 @@
     border: solid map-get($colors , cOrange);
     border-radius: 10px;
   }
+  p {
+    height: 130px;
+  }
+  // .productDescription {
+  //   height: 120px;
+  // }
 }
 

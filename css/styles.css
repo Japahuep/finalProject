@@ -36,6 +36,7 @@ section {
 
 .title {
   margin-bottom: 20px;
+  margin-top: 20px;
   min-height: 50px;
   text-align: center; }
   .title p {
@@ -58,6 +59,10 @@ section {
 
 .backgroundOrange {
   background-color: #ffaa09; }
+
+@font-face {
+  font-family: "Gretoon";
+  src: url("../fonts/Gretoon.ttf"); }
 
 header {
   position: fixed;
@@ -124,7 +129,7 @@ footer {
   grid-area: banner; }
 
 #productsSection {
-  padding: 45px 30px;
+  padding: 20px 30px 45px 30px;
   margin-bottom: 15px;
   grid-area: products; }
   #productsSection h3 {
@@ -150,6 +155,9 @@ footer {
 
 .banner {
   margin-top: 110px; }
+  .banner h1 {
+    font-family: 'Gretoon';
+    color: #7b5110; }
   .banner h2 {
     font-size: 25px; }
 
@@ -188,7 +196,7 @@ footer {
   margin-top: 50px;
   margin-bottom: 55px; }
   .productBoxSection div {
-    width: 150px;
+    width: 200px;
     margin: 10px 10px; }
   .productBoxSection button {
     background-color: #ffaa09;
@@ -198,6 +206,8 @@ footer {
     text-align: center;
     border: solid #ffaa09;
     border-radius: 10px; }
+  .productBoxSection p {
+    height: 130px; }
 
 .promoResume {
   overflow: auto; }
@@ -208,6 +218,8 @@ footer {
   flex-wrap: wrap;
   min-width: 250px;
   margin-bottom: 135px; }
+  .promoMain h4 {
+    min-width: 280px; }
   .promoMain div {
     margin: 10px 10px; }
   .promoMain p {
@@ -265,7 +277,7 @@ footer {
   .productBoxSection {
     flex-wrap: wrap; }
   .productBoxSection div {
-    min-width: 250px; }
+    min-width: 280px; }
   .promoResume {
     justify-content: flex-start; }
   .inlineHeader {
