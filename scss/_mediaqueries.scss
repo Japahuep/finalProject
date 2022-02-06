@@ -1,5 +1,8 @@
 @media screen and (max-width: 768px) {
-  .imgProducts, .actions {
+    .up {
+        bottom: 15%;
+    }
+    .actions {
       flex-direction: column;
   }
   .reachOut {
@@ -28,14 +31,31 @@
       "products"
       "action"
       "reachOut";}
+.actions{
+    .actionsInside {
+    width: 100%;
+    }
+}
+.reachOut img {
+    width: 40%;
+}
   .productBoxSection {
-      flex-wrap: wrap;
-  }
-  .productBoxSection div {
-      min-width: 280px;
+    flex-wrap: wrap;
+    div {
+        min-width: 250px;
+        p {
+            height: auto;
+        }   
+    }
   }
   .promoResume {
       justify-content: flex-start;
+      overflow-x: scroll;
+  }
+  .promoMainBox {
+      ul {
+          height: auto;
+      }
   }
   .inlineHeader {
       display: none;
@@ -67,6 +87,6 @@
         }
     }
     main {
-        padding-bottom: 315.833px;
+        padding-bottom: 340px;
     }
 }

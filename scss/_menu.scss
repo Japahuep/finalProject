@@ -1,24 +1,34 @@
 .productBoxSection {
+  display: flex;
+  justify-content: space-around;
+  text-align: center; 
+  flex-wrap: wrap;
   margin-top: 50px ;
   margin-bottom: 55px;
   div {
-    width: 200px;
-    margin: 10px 10px;
+    width: 250px;
+    margin: 10px auto;
+    h4 {
+      font-weight: bold;
+    }
+    button {
+      background-color: map-get($colors , cOrange);
+      color: white;
+      height: 35px;
+      width: 80%;
+      text-align: center;
+      border: solid map-get($colors , cOrange);
+      border-radius: 10px;
+    }
+    img {
+      height: 220px;
+      border-radius: 50%;
+      border: solid map-get($colors, cOrange)
+    }
+    p {
+      padding-top: 10px;
+      height: 130px;
+    }
   }
-  button {
-    background-color: map-get($colors , cOrange);
-    color: white;
-    height: 35px;
-    width: 80%;
-    text-align: center;
-    border: solid map-get($colors , cOrange);
-    border-radius: 10px;
-  }
-  p {
-    height: 130px;
-  }
-  // .productDescription {
-  //   height: 120px;
-  // }
 }
 

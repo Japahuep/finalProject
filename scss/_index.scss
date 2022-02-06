@@ -2,7 +2,7 @@
   grid-area: banner;
 }
 #productsSection {
-  padding: 20px 30px 45px 30px;
+  padding: 5px 30px 45px 30px;
   margin-bottom: 15px;
   grid-area: products;
   h3 {
@@ -25,11 +25,6 @@
       "products products"
       "action reachOut";
 }
-.imgProducts, .productBoxSection, .promoResume, .promoMain {
-  display: flex;
-  justify-content: space-around;
-  text-align: center; 
-}
 .banner {
   margin-top: 110px;
   h1 {
@@ -42,26 +37,38 @@
 }
 .carousel-inner{
   width:100%;
-  max-height: 370px !important;
+  max-height: 420px !important;
   img {
     margin: auto;
   }
 }
 @mixin images($width){
   width: $width;
-    transition: all ease 0.5s;
-    &:hover {
-      transform: scale(1.2,1.2);
-    }
+  border-radius: 50%;
+  border: solid map-get($colors, cOrange);
+  transition: all ease 0.5s;
+  &:hover {
+    transform: scale(1.2,1.2);
+  }
 }
 
 .actions {
-  @extend .imgProducts;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center; 
   img{
-  @include images(40%);
+  @include images(50%);
   }
-  div{
+  .actionsInside{
+    width: 50%;
     margin-bottom: 10px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
+  .title {
+    height: 70px;
   }
 }
 .reachOut {
@@ -76,6 +83,6 @@
     justify-content: center;
   }
   img {
-    @include images(25%);
+    @include images(45%);
   }
 }

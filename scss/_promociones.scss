@@ -1,25 +1,42 @@
 .promoResume {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  text-align: center; 
   overflow: auto;
+  .selectedFilter {
+    border-bottom: 4px solid map-get($colors, cOrange);
+  }
   div {
-    margin: 10px 10px; 
+    margin: 0 5px 10px 10px;
+    img {
+      height: 80px;
+      border-radius: 50%;
+      border: solid map-get($colors, cOrange);
+    }
   }
 }
 .promoMain {
+  display: flex;
+  justify-content: space-around;
+  text-align: center; 
   flex-wrap: wrap;
   min-width: 250px;
   margin-bottom: 135px;
   h4 {
     min-width: 280px;
+    font-weight: bold;
   }
   div {
     margin: 10px 10px;
   }
   p{
+    padding-top: 10px;
     text-align: center;
   }
 }
 .promoMainBox {
-  min-width: 180px;
+  min-width: 250px;
   button {
     background-color: map-get($colors, cOrange);
     color: white;
@@ -28,5 +45,16 @@
     text-align: center;
     border: solid map-get($colors, cOrange);
     border-radius: 10px;
+  }
+  img {
+    height: 220px;
+    border-radius: 50%;
+    border: solid map-get($colors, cOrange);
+  }
+  ul {
+    height: 130px;
+    li{
+      list-style-type: circle;
+    }
   }
 }

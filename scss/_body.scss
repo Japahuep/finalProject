@@ -38,6 +38,33 @@ p {
 section {
   padding: 20px 30px;
 }
+form {
+  max-width: 420px;
+  margin: 0 auto;
+  div {
+    display: flex;
+    flex-wrap: nowrap;
+    label {
+      white-space: pre;
+      margin: 20px 20px 0 0;
+    }
+    label + input {
+      padding: 0 5px;
+      margin-top: 20px;
+      width: 100%;
+    }
+    label + select {
+      margin-top: 20px;
+    }
+  }
+  .commentBox {
+    display: block;
+  }
+  .buttonsBox {
+    justify-content: space-around;
+    width: 369px;
+  }
+}
 .title {
   margin-bottom: 20px;
   margin-top: 20px;

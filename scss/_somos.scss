@@ -8,6 +8,9 @@
 }
 #knowUsImageSection {
   grid-area: knowUsImage;
+  img {
+    width: 200px;
+  }
 }
 #knowUsGrid {
   display: grid;

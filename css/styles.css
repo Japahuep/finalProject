@@ -34,6 +34,27 @@ p {
 section {
   padding: 20px 30px; }
 
+form {
+  max-width: 420px;
+  margin: 0 auto; }
+  form div {
+    display: flex;
+    flex-wrap: nowrap; }
+    form div label {
+      white-space: pre;
+      margin: 20px 20px 0 0; }
+    form div label + input {
+      padding: 0 5px;
+      margin-top: 20px;
+      width: 100%; }
+    form div label + select {
+      margin-top: 20px; }
+  form .commentBox {
+    display: block; }
+  form .buttonsBox {
+    justify-content: space-around;
+    width: 369px; }
+
 .title {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -71,18 +92,22 @@ header {
   background-color: white;
   border-bottom: solid #ffaa09 3px;
   z-index: 5; }
-  header li {
-    display: inline-block;
-    padding: 0 10px; }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+    list-style: none;
+    list-style-position: outside;
+    list-style-image: none;
+    list-style-type: none; }
 
 .navbar-light .navbar-nav .nav-link, header .container-fluid {
   background-color: white;
   color: #ffaa09;
   font-size: 21px;
   font-weight: bold; }
-
-.icons {
-  width: 40px; }
 
 .logo {
   width: 64px;
@@ -108,7 +133,8 @@ footer {
 
 .footerReachOut {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .up {
   background-color: white;
@@ -129,7 +155,7 @@ footer {
   grid-area: banner; }
 
 #productsSection {
-  padding: 20px 30px 45px 30px;
+  padding: 5px 30px 45px 30px;
   margin-bottom: 15px;
   grid-area: products; }
   #productsSection h3 {
@@ -148,11 +174,6 @@ footer {
   grid-template-rows: 20% 40% 20%;
   grid-template-areas: "banner banner" "products products" "action reachOut"; }
 
-.imgProducts, .actions, .productBoxSection, .promoResume, .promoMain {
-  display: flex;
-  justify-content: space-around;
-  text-align: center; }
-
 .banner {
   margin-top: 110px; }
   .banner h1 {
@@ -163,18 +184,30 @@ footer {
 
 .carousel-inner {
   width: 100%;
-  max-height: 370px !important; }
+  max-height: 420px !important; }
   .carousel-inner img {
     margin: auto; }
 
-.actions img {
-  width: 40%;
-  transition: all ease 0.5s; }
-  .actions img:hover {
-    transform: scale(1.2, 1.2); }
-
-.actions div {
-  margin-bottom: 10px; }
+.actions {
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+  .actions img {
+    width: 50%;
+    border-radius: 50%;
+    border: solid #ffaa09;
+    transition: all ease 0.5s; }
+    .actions img:hover {
+      transform: scale(1.2, 1.2); }
+  .actions .actionsInside {
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .actions .title {
+    height: 70px; }
 
 .reachOut {
   display: flex;
@@ -187,46 +220,74 @@ footer {
     align-items: center;
     justify-content: center; }
   .reachOut img {
-    width: 25%;
+    width: 45%;
+    border-radius: 50%;
+    border: solid #ffaa09;
     transition: all ease 0.5s; }
     .reachOut img:hover {
       transform: scale(1.2, 1.2); }
 
 .productBoxSection {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 55px; }
   .productBoxSection div {
-    width: 200px;
-    margin: 10px 10px; }
-  .productBoxSection button {
-    background-color: #ffaa09;
-    color: white;
-    height: 35px;
-    width: 80%;
-    text-align: center;
-    border: solid #ffaa09;
-    border-radius: 10px; }
-  .productBoxSection p {
-    height: 130px; }
+    width: 250px;
+    margin: 10px auto; }
+    .productBoxSection div h4 {
+      font-weight: bold; }
+    .productBoxSection div button {
+      background-color: #ffaa09;
+      color: white;
+      height: 35px;
+      width: 80%;
+      text-align: center;
+      border: solid #ffaa09;
+      border-radius: 10px; }
+    .productBoxSection div img {
+      height: 220px;
+      border-radius: 50%;
+      border: solid #ffaa09; }
+    .productBoxSection div p {
+      padding-top: 10px;
+      height: 130px; }
 
 .promoResume {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
   overflow: auto; }
+  .promoResume .selectedFilter {
+    border-bottom: 4px solid #ffaa09; }
   .promoResume div {
-    margin: 10px 10px; }
+    margin: 0 5px 10px 10px; }
+    .promoResume div img {
+      height: 80px;
+      border-radius: 50%;
+      border: solid #ffaa09; }
 
 .promoMain {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
   flex-wrap: wrap;
   min-width: 250px;
   margin-bottom: 135px; }
   .promoMain h4 {
-    min-width: 280px; }
+    min-width: 280px;
+    font-weight: bold; }
   .promoMain div {
     margin: 10px 10px; }
   .promoMain p {
+    padding-top: 10px;
     text-align: center; }
 
 .promoMainBox {
-  min-width: 180px; }
+  min-width: 250px; }
   .promoMainBox button {
     background-color: #ffaa09;
     color: white;
@@ -235,6 +296,14 @@ footer {
     text-align: center;
     border: solid #ffaa09;
     border-radius: 10px; }
+  .promoMainBox img {
+    height: 220px;
+    border-radius: 50%;
+    border: solid #ffaa09; }
+  .promoMainBox ul {
+    height: 130px; }
+    .promoMainBox ul li {
+      list-style-type: circle; }
 
 .accordion-button {
   color: #7b5110; }
@@ -249,6 +318,8 @@ footer {
 
 #knowUsImageSection {
   grid-area: knowUsImage; }
+  #knowUsImageSection img {
+    width: 200px; }
 
 #knowUsGrid {
   display: grid;
@@ -256,7 +327,9 @@ footer {
   grid-template-areas: "knowUsText knowUsImage"; }
 
 @media screen and (max-width: 768px) {
-  .imgProducts, .actions, .actions {
+  .up {
+    bottom: 15%; }
+  .actions {
     flex-direction: column; }
   .reachOut {
     flex-direction: row;
@@ -274,12 +347,21 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 20% 20% 40% 20%;
     grid-template-areas: "banner" "products" "action" "reachOut"; }
+  .actions .actionsInside {
+    width: 100%; }
+  .reachOut img {
+    width: 40%; }
   .productBoxSection {
     flex-wrap: wrap; }
-  .productBoxSection div {
-    min-width: 280px; }
+    .productBoxSection div {
+      min-width: 250px; }
+      .productBoxSection div p {
+        height: auto; }
   .promoResume {
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    overflow-x: scroll; }
+  .promoMainBox ul {
+    height: auto; }
   .inlineHeader {
     display: none; }
   #knowUsGrid {
@@ -299,4 +381,4 @@ footer {
     display: flex;
     flex-direction: column; }
   main {
-    padding-bottom: 315.833px; } }
+    padding-bottom: 340px; } }
