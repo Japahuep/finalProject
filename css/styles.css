@@ -171,7 +171,7 @@ footer {
 #indexGrid {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 20% 40% 20%;
+  grid-template-rows: 20% 45% 35%;
   grid-template-areas: "banner banner" "products products" "action reachOut"; }
 
 .banner {
@@ -189,12 +189,13 @@ footer {
     margin: auto; }
 
 .actions {
-  height: 90%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   text-align: center; }
   .actions img {
     width: 50%;
+    height: auto;
     border-radius: 50%;
     border: solid #ffaa09;
     transition: all ease 0.5s; }
@@ -206,8 +207,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
-  .actions .title {
-    height: 70px; }
+    .actions .actionsInside .title {
+      height: 55%; }
+    .actions .actionsInside .img {
+      height: 45%; }
 
 .reachOut {
   display: flex;
@@ -221,6 +224,7 @@ footer {
     justify-content: center; }
   .reachOut img {
     width: 45%;
+    height: auto;
     border-radius: 50%;
     border: solid #ffaa09;
     transition: all ease 0.5s; }
@@ -301,7 +305,9 @@ footer {
     border-radius: 50%;
     border: solid #ffaa09; }
   .promoMainBox ul {
-    height: 130px; }
+    height: 130px;
+    padding-left: 0;
+    list-style-position: inside; }
     .promoMainBox ul li {
       list-style-type: circle; }
 
@@ -337,7 +343,7 @@ footer {
     justify-content: space-around; }
   .footerContent {
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 65% 35%;
     grid-template-areas: "footerHistory" "footerReachOut"; }
     .footerContent li {
       padding: 10px; }
@@ -345,12 +351,13 @@ footer {
       display: flex; }
   #indexGrid {
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 20% 40% 20%;
+    grid-template-rows: 25% 15% 45% 15%;
     grid-template-areas: "banner" "products" "action" "reachOut"; }
   .actions .actionsInside {
     width: 100%; }
   .reachOut img {
-    width: 40%; }
+    width: 60%;
+    height: auto; }
   .productBoxSection {
     flex-wrap: wrap; }
     .productBoxSection div {
@@ -382,3 +389,13 @@ footer {
     flex-direction: column; }
   main {
     padding-bottom: 340px; } }
+
+@media screen and (min-width: 1600px) {
+  .actions img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    border: solid #ffaa09;
+    transition: all ease 0.5s; }
+    .actions img:hover {
+      transform: scale(1.2, 1.2); } }
